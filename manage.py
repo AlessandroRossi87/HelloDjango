@@ -7,6 +7,8 @@ import sys
 def main():
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'django_todo.settings')
+    os.environ.setdefault(
+        'DATABASE_URL', 'postgres://ifwkrvvm:C17ThewUVEUJVov5mdUbL30XQXzdd6VQ@cornelius.db.elephantsql.com/ifwkrvvm')
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
